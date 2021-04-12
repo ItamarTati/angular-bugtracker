@@ -1,4 +1,4 @@
-<mat-form-field appearance="fill">
+<mat-form-field appearance="fill" [formGroup] = "registerForm">
     <mat-label>Name</mat-label>
-    <input matInput>
+    <input matInput formControlName="name">
 </mat-form-field>

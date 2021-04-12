@@ -1,9 +1,9 @@
-<mat-form-field appearance="fill">
+<mat-form-field appearance="fill" [formGroup] = "registerForm">
     <mat-label>Choose Role</mat-label>
-    <mat-select>
-        <mat-option value="one">Project Manager</mat-option>
-        <mat-option value="two">Team Lead</mat-option>
-        <mat-option value="three">Developer</mat-option>
+    <mat-select formControlName="role">
+        <mat-option value="Project Manager">Project Manager</mat-option>
+        <mat-option value="Team Lead">Team Lead</mat-option>
+        <mat-option value="Developer">Developer</mat-option>
     </mat-select>
 </mat-form-field>
 

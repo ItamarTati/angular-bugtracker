@@ -1,18 +1,22 @@
 <div class="container">
+  
     <mat-card class="card">
-            <mat-card-title>Register Form</mat-card-title>
+        <form [formGroup] = "registerForm"> 
+        <mat-card-title>Register Form</mat-card-title>
             <mat-card-subtitle>Please Fill in your Details</mat-card-subtitle>
             <img mat-card-image src="../../assets/bug-group.svg" alt="Photo of Bugs">            
             <mat-card-content>
-                <input-name></input-name>
-                <input-role></input-role>
-                <input-email></input-email>
-                <input-password></input-password>
+                <input-name [registerForm]="registerForm"></input-name>
+                <input-role [registerForm]="registerForm"></input-role>
+                <input-email [registerForm]="registerForm"></input-email>
+                <input-password [registerForm]="registerForm"></input-password>
         </mat-card-content>
         <mat-card-actions>
             <button-submit></button-submit>
             <button-demo></button-demo>
         </mat-card-actions>
         <a href=''>Already signed up? Login Here</a>
+        <p>Value: {{registerForm.value | json}}</p>    
+    </form>  
     </mat-card>
 </div>
