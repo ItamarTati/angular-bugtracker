@@ -1,15 +1,9 @@
 .homepage{
-    // background-image: url("../assets/spring-boot-logo.svg"), url("../assets/angular.svg");
-    // background-position: left, right;
-    // background-repeat: no-repeat, no-repeat;
-    // background-size: 400px 400px, 400px 400px;
-    // background: rgb(0,41,246);
-    // background: linear-gradient(45deg, rgba(0,41,246,1) 0%, rgba(255,0,52,1) 100%);
-    background:     linear-gradient(
+    background: linear-gradient(
         45deg,
         rgba(0,41,246, 0.9) 0%, 
         rgba(255, 0, 52, 0.9) 100%
-      ), url("../assets/spring-boot-logo.svg") left no-repeat, url("../assets/angular.svg") right no-repeat;
+      ), url("../assets/angular.svg") left no-repeat, url("../assets/spring-boot-logo.svg") right no-repeat;
       background-size: cover, 50vh, 50vh;
 
     height: 100%;

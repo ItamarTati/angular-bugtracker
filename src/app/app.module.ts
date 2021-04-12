@@ -14,13 +14,25 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NameComponent } from './inputs/name/name.component';
+import { RoleComponent } from './inputs/role/role.component';
+import { EmailComponent } from './inputs/email/email.component';
+import { PasswordComponent } from './inputs/password/password.component';
+import { SubmitComponent } from './buttons/submit/submit.component';
+import { DemoComponent } from './buttons/demo/demo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent  
+    RegisterComponent,
+    NameComponent,
+    RoleComponent,
+    EmailComponent,
+    PasswordComponent,
+    SubmitComponent,
+    DemoComponent  
   ],
   imports: [
     BrowserModule,
