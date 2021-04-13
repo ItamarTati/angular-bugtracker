@@ -1,4 +1,5 @@
 <mat-form-field appearance="fill" [formGroup] = "registerForm">
     <mat-label>Name</mat-label>
-    <input matInput formControlName="name">
+    <input matInput formControlName="name" required>
+    <mat-error *ngIf="name.invalid">Name is Required</mat-error>
 </mat-form-field>

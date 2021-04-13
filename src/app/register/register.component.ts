@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms'
+import {FormBuilder, Validators, FormGroup} from '@angular/forms'
 
 @Component({
   selector: 'app-register',
@@ -15,10 +15,10 @@ export class RegisterComponent implements  OnInit {
   registerForm!: FormGroup
   ngOnInit(){
     this.registerForm = this.formbuilder.group({
-      name: '',
-      role: '',
-      email: '',
-      password: ''
+      name: ['', Validators.required],
+      role: ['', Validators.required],
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     })
 
     this.registerForm.valueChanges.subscribe(console.log)

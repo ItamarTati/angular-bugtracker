@@ -12,7 +12,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
-
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NameComponent } from './inputs/name/name.component';
 import { RoleComponent } from './inputs/role/role.component';

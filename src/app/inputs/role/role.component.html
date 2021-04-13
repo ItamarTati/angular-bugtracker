@@ -1,9 +1,11 @@
 <mat-form-field appearance="fill" [formGroup] = "registerForm">
     <mat-label>Choose Role</mat-label>
-    <mat-select formControlName="role">
+    <mat-select formControlName="role" required>
         <mat-option value="Project Manager">Project Manager</mat-option>
         <mat-option value="Team Lead">Team Lead</mat-option>
         <mat-option value="Developer">Developer</mat-option>
     </mat-select>
+    <mat-error *ngIf="role.invalid">Name Required</mat-error>
 </mat-form-field>
+
 
