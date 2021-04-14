@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {FormControl, Validators, FormGroup} from '@angular/forms';
+import {FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'input-name',
@@ -9,9 +9,7 @@ import {FormControl, Validators, FormGroup} from '@angular/forms';
 export class NameComponent implements OnInit {
   @Input() registerForm!: FormGroup;
   constructor() { }
-  name =  new FormControl('', Validators.required);
   ngOnInit(): void {
-    this.registerForm.addControl('name', this.name)
 
   }
 

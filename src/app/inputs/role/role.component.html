@@ -5,7 +5,10 @@
         <mat-option value="Team Lead">Team Lead</mat-option>
         <mat-option value="Developer">Developer</mat-option>
     </mat-select>
-    <mat-error *ngIf="role.invalid">Name Required</mat-error>
+    <mat-error 
+    *ngIf="registerForm.get('role')!.hasError('required')">
+    Role is <strong>required</strong>
+    </mat-error>
 </mat-form-field>
 
 

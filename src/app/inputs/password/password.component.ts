@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {FormControl, Validators, FormGroup} from '@angular/forms';
+import {FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'input-password',
@@ -10,9 +10,7 @@ export class PasswordComponent implements OnInit {
   @Input() registerForm!: FormGroup;
   hide = true;
   constructor() { }
-  password = new FormControl('')
   ngOnInit(): void {
-    this.registerForm.addControl('password', this.password)
 
   }
 

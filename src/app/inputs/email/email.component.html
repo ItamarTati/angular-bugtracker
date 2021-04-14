@@ -1,8 +1,10 @@
-<mat-form-field appearance="fill" [formGroup] = "registerForm">
+<mat-form-field appearance="fill" [formGroup]="registerForm">
     <mat-label>Enter your email</mat-label>
-    <input matInput placeholder="pat@example.com" type="email" formControlName="email" required>
-    <mat-error *ngIf="registerForm.get('email')">Email is Required</mat-error>
-    
+    <input matInput placeholder="johndoe@example.com" type="email" formControlName="email" required>
+    <mat-error *ngIf="registerForm.get('email')!.hasError('email') && !registerForm.get('email')!.hasError('required')">
+    Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="registerForm.get('email')!.hasError('required')">
+    Email is <strong>required</strong>
+    </mat-error>
 </mat-form-field>
-
-
