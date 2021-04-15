@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="container"> 
+    <mat-card class="card">
+        <form [formGroup] = "loginForm"> 
+        <mat-card-title>Login</mat-card-title>
+            <mat-card-subtitle>Please login with your credentials</mat-card-subtitle>
+            <img mat-card-image src="../../assets/bug-group.svg" alt="Photo of Bugs">            
+            <mat-card-content>
+
+        </mat-card-content>
+        <mat-card-actions >
+            <button-demo class='button'></button-demo>
+            <button-submit></button-submit>
+        </mat-card-actions >
+        <a href=''>Need to signed up? Sign up Here</a>
+        <p>Value: {{loginForm.value | json}}</p>    
+    </form>  
+    </mat-card>
+</div>

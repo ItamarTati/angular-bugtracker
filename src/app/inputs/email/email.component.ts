@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {FormControl, Validators, FormGroup} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'input-email',
@@ -9,6 +8,7 @@ import {ErrorStateMatcher} from '@angular/material/core';
 })
 export class EmailComponent implements OnInit {
   @Input() registerForm!: FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
 
+  constructor(
+    private formbuilder: FormBuilder) { }
+
+  loginForm!: FormGroup
   ngOnInit(): void {
+    this.loginForm = this.formbuilder.group({
+      email: ['', {
+        validators: [Validators.required],
+        updateOn: "change",
+      }],
+      password: ['', {
+        validators: [Validators.required,
+        ],
+        updateOn: "change"
+      }],
+    })
+    this.loginForm.valueChanges.subscribe(console.log)
+
   }
 
 }
