@@ -2,10 +2,11 @@
     <mat-card class="card">
         <form [formGroup] = "loginForm"> 
         <mat-card-title>Login Form</mat-card-title>
-            <mat-card-subtitle>Please login with your credentials</mat-card-subtitle>
+            <mat-card-subtitle>Please login with your Credentials</mat-card-subtitle>
             <img mat-card-image src="../../assets/login.svg" alt="Photo of Bugs">            
             <mat-card-content>
-
+                <app-email-login [loginForm]="loginForm"></app-email-login>
+                <app-password-login [loginForm]="loginForm"></app-password-login>
         </mat-card-content>
         <mat-card-actions >
             <button-demo class='button'></button-demo>

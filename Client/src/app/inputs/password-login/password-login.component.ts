@@ -8,7 +8,7 @@ import {FormGroup} from '@angular/forms';
 })
 export class PasswordLoginComponent implements OnInit {
 
-  @Input() registerForm!: FormGroup;
+  @Input() loginForm!: FormGroup;
   hide = true;
   constructor() { }
   ngOnInit(): void {

@@ -8,7 +8,7 @@ import { FormGroup} from '@angular/forms';
 })
 export class EmailLoginComponent implements OnInit {
 
-  @Input() registerForm!: FormGroup;
+  @Input() loginForm!: FormGroup;
 
   constructor() { }
 
