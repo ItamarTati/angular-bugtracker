@@ -1,46 +1,46 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/tmp
-/out-tsc
+Client/dist
+Client/tmp
+Client/out-tsc
 # Only exists if Bazel was run
-/bazel-out
+Client/bazel-out
 
 # dependencies
-/node_modules
+Client/node_modules
 
 # profiling files
-chrome-profiler-events*.json
-speed-measure-plugin*.json
+Client/chrome-profiler-events*.json
+Client/speed-measure-plugin*.json
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+Client/.idea
+Client/.project
+Client/.classpath
+Client/.c9/
+Client/*.launch
+Client/.settings/
+Client/*.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+Client/.vscode/*
+Client/!.vscode/settings.json
+Client/!.vscode/tasks.json
+Client/!.vscode/launch.json
+Client/!.vscode/extensions.json
+Client/.history/*
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+Client/.sass-cache
+Client/connect.lock
+Client/coverage
+Client/libpeerconnection.log
+Client/npm-debug.log
+Client/yarn-error.log
+Client/testem.log
+Client/typings
 
 # System Files
-.DS_Store
-Thumbs.db
+Client/.DS_Store
+Client/Thumbs.db
