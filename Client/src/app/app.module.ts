@@ -19,6 +19,8 @@ import { EmailComponent } from './inputs/email/email.component';
 import { PasswordComponent } from './inputs/password/password.component';
 import { SubmitComponent } from './buttons/submit/submit.component';
 import { DemoComponent } from './buttons/demo/demo.component';
+import { EmailLoginComponent } from './inputs/email-login/email-login.component';
+import { PasswordLoginComponent } from './inputs/password-login/password-login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DemoComponent } from './buttons/demo/demo.component';
     EmailComponent,
     PasswordComponent,
     SubmitComponent,
-    DemoComponent  
+    DemoComponent,
+    EmailLoginComponent,
+    PasswordLoginComponent  
   ],
   imports: [
     BrowserModule,
