@@ -3,8 +3,12 @@
         45deg,
         rgba(0,41,246, 0.9) 0%, 
         rgba(255, 0, 52, 0.9) 100%
-      ), url("../assets/angular.svg") left no-repeat, url("../assets/spring-boot-logo.svg") right no-repeat;
-      background-size: cover, 50vh, 50vh;
+      ), 
+      url("../assets/angular.svg") left top no-repeat, 
+      url("../assets/spring-boot-logo.svg") right top no-repeat, 
+      url("../assets/sass.svg") left bottom no-repeat, 
+      url("../assets/Postgresql.svg") right bottom no-repeat,;
+      background-size: cover, 50vh, 50vh, 50vh, 50vh;
 
     height: 100%;
     .mat-typography{
