@@ -3,7 +3,7 @@
 <div class="mat-typography">
     <h1 class="mat-display-2">{{title}}</h1>
 </div>
-   
-<router-outlet></router-outlet>
-
+<div [@routeAnimations]="prepareRoute(outlet)" >
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
 </div>

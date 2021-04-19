@@ -20,7 +20,6 @@ import { PasswordComponent } from './inputs/password/password.component';
 import { SubmitComponent } from './buttons/submit/submit.component';
 import { DemoComponent } from './buttons/demo/demo.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
