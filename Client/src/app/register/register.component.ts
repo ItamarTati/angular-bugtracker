@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-register',
@@ -8,8 +9,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 })
 export class RegisterComponent {
   constructor(
-    private formbuilder: FormBuilder) { }
+    private formbuilder: FormBuilder,
+    ) { 
+    }
   registerForm!: FormGroup
+
   ngOnInit(): void {
     this.registerForm = this.formbuilder.group({
       name: ['', { validators: [Validators.required], updateOn: "change" }],
@@ -25,9 +29,12 @@ export class RegisterComponent {
         ],
         updateOn: "change"
       }],
-    })
-    this.registerForm.valueChanges.subscribe(console.log)
+    },
+    )
+
+    // this.registerForm.valueChanges.subscribe(console.log)
   }
+
 }
 
 

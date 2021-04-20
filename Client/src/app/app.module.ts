@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {  HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -48,9 +48,9 @@ import { PasswordLoginComponent } from './inputs/password-login/password-login.c
     MatCardModule,
     FormsModule,
     ReactiveFormsModule, 
-
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

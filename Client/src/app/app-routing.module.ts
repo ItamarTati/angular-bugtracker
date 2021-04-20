@@ -5,7 +5,7 @@ import {LoginComponent} from './login/login.component'
 
 
 const routes: Routes = [
-  {path: '',  component: RegisterComponent},
+  {path: '',  component: RegisterComponent, data: { animation: 'isRight' }},
   {path: 'login',  component: LoginComponent, data: { animation: 'isLeft' }}
 
 
