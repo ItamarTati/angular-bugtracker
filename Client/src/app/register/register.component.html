@@ -1,6 +1,6 @@
 <div class="container"> 
     <mat-card class="card">
-        <form [formGroup] = "registerForm"> 
+        <form [formGroup] = "registerForm" (ngSubmit)="onSubmit(registerForm.value)"> 
         <mat-card-title>Register Form</mat-card-title>
             <mat-card-subtitle>Please Fill in your Details</mat-card-subtitle>
             <img mat-card-image src="../../assets/bug-group.svg" alt="Photo of Bugs">            
@@ -12,7 +12,8 @@
         </mat-card-content>
         <mat-card-actions >
             <button-demo class='button'></button-demo>
-            <button-submit></button-submit>
+            <button-submit ></button-submit>
+            <button type="submit">submit</button>
         </mat-card-actions >
         <a routerLink='/login'>Already Registerd? Login Here</a>
         <p>Value: {{registerForm.value | json}}</p>    

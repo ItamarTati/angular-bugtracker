@@ -12,19 +12,26 @@ public class LoginController {
     public LoginController(LoginService loginService) {
         this.loginService = loginService;
     }
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping
     public List<Login> getLogins() {
         return loginService.getLogins();
     }
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping
     public void registerNewLogin(@RequestBody Login login){
         loginService.addNewLogin(login);
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @DeleteMapping(path = "{loginId}")
     public void deleteLogin(@PathVariable("loginId") Long loginId){
         loginService.deleteLogin(loginId);
     }
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @PutMapping(path = "{loginId}")
     public void updateLogin(
             @PathVariable("loginId") Long loginId,
