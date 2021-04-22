@@ -3,6 +3,7 @@ import { RegisterComponent } from './register.component';
 import {ReactiveFormsModule} from '@angular/forms'
 import { RouterTestingModule } from '@angular/router/testing';
 import { RouterLinkWithHref } from '@angular/router';
+import {  HttpClient, HttpClientModule,HttpHandler } from '@angular/common/http';
 import {By} from "@angular/platform-browser";
 
 
@@ -16,6 +17,7 @@ describe('RegisterComponent', () => {
         ReactiveFormsModule,
         RouterTestingModule.withRoutes([])
       ],
+      providers: [HttpClient, HttpHandler],
       declarations: [ RegisterComponent ]
     })
     .compileComponents();

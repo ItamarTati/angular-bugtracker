@@ -36,9 +36,8 @@ export class RegisterComponent {
   }
 
   onSubmit(user: any): void {
-    console.log(user);
     if (this.registerForm.valid) {
-      this.registerService.addUser(user)
+      this.registerService.addUser(user).subscribe()
     }
 
   }

@@ -24,6 +24,6 @@ export class RegisterService {
   loginUrl = 'http://localhost:8080/api/v1/login'
   
   addUser(user: User) {
-    return this.http.post<User>(this.loginUrl, user, this.httpOptions).subscribe()
-}
+    return this.http.post<User>(this.loginUrl, user, this.httpOptions)
+  }
 }
